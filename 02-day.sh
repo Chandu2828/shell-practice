@@ -2,10 +2,10 @@
 
 today = Thursday
 
-if (today != sunday) {
+if (today != sunday){
     print ("School ki velli chanduko")
 }
-else {
+else{
     print ("Take holiday and enjoypandago")
 }
 
