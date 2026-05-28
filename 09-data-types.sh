@@ -16,3 +16,4 @@ echo "Movies are: ${MOVIES[@]}"
 echo "First movie is: ${MOVIES[0]}"
 echo "Second movie is: ${MOVIES[1]}"
 echo "Third movie is: ${MOVIES[2]}"
+
