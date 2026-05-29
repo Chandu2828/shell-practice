@@ -26,7 +26,7 @@ VALIDATE(){
     fi
 }
 
-for package in $0
+for package in $@
 do 
     echo "$TIMESTAMP [INFO] Installing $package"
     dnf list installed $package &>> $LOGS_FILE
