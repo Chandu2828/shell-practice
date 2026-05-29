@@ -5,7 +5,7 @@ LOGS_DIR=/var/log/shell-script
 LOGS_FILE="$LOGS_DIR/$0.log" # /var/log/shell-script/10-logs.sh.log
 
 # check root access or not
-if [ $USERID -ne 0]; then
+if [ $USERID -ne 0 ]; then
     echo "Please run the script with root access"
     exit 1
 fi
@@ -23,7 +23,7 @@ VALIDATE(){
 
 dnf list installed mysql &>> $LOGS_FILE
 
-if [ $? -eq 0]; then
+if [ $? -eq 0 ]; then
     echo "MySQL is already installed ... SKIPPING" | tee -a $LOGS_FILE
 else
     echo "Installing MySQL"
@@ -32,7 +32,7 @@ else
 fi 
 
 dnf list installed nginx &>> $LOGS_FILE
-if [ $? -ne 0]; then
+if [ $? -eq 0]; then
     echo "nginx is already installed ... SKIPPING" | tee -a $LOGS_FILE
 else
     echo "Installing nginx"
