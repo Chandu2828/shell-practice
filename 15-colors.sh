@@ -23,6 +23,7 @@ VALIDATE(){
         exit 1
     else 
         echo -e "$TIMESTAMP [INFO] Installing $1 is ... $G SUCCESS $N" | tee -a $LOGS_FILE
+    fi
 }
 
 for package in $0
